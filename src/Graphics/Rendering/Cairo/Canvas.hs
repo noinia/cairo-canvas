@@ -50,7 +50,7 @@ module Graphics.Rendering.Cairo.Canvas (
   Canvas, runCanvas, withRenderer, getCanvasSize,
   -- * Color and Style
   Color, Byte, gray, red, green, blue, rgb, (!@),
-  stroke, fill, noStroke, noFill, strokeWeight, strokeJoin, strokeCap,
+  stroke, fill, getStroke, getFill, noStroke, noFill, strokeWeight, strokeJoin, strokeCap,
   -- * Coordinates
   Dim(..), toD, dimPos, dimSize, Anchor(..), aligned, centered, corners,
   -- * Primitives
