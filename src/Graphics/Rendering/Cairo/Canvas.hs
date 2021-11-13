@@ -143,6 +143,12 @@ stroke clr = modify $ \cs -> cs{csFG=Just clr}
 -- | set current fill color
 fill :: Color -> Canvas ()
 fill clr   = modify $ \cs -> cs{csBG=Just clr}
+-- | Get the stroke color
+getStroke :: Canvas (Maybe Color)
+getStroke = gets csFG
+-- | Get the fill color
+getFill :: Canvas (Maybe Color)
+getFill = gets csBG
 -- | disable stroke (-> shapes without borders!), reenabled by using 'stroke'
 noStroke :: Canvas ()
 noStroke   = modify $ \cs -> cs{csFG=Nothing}
